@@ -5,9 +5,9 @@ const emit = defineEmits(['next'])
 const selectedOption = ref(null)
 const options = reactive([
 	{
-		title: 'ERPNext',
-		description: 'Connect to your ERPNext site',
-		img: 'ERPNextIcon.png',
+		title: 'ERP.GG',
+		description: 'Connect to your ERP.GG site',
+		img: 'ERPGGtIcon.png',
 	},
 	{
 		title: 'MariaDB',
@@ -74,7 +74,7 @@ function validateAndContinue() {
 			>
 				<div v-if="option.img" class="mr-3 flex w-12 items-center justify-center">
 					<img v-if="option.img === 'SheetIcon.png'" src="../assets/SheetIcon.png" />
-					<img v-if="option.img === 'ERPNextIcon.png'" src="../assets/ERPNextIcon.png" />
+					<img v-if="option.img === 'ERPGGIcon.png'" src="../assets/ERPGGIcon.png" />
 					<img v-if="option.img === 'MariaDBIcon.png'" src="../assets/MariaDBIcon.png" />
 					<img
 						v-if="option.img === 'PostgreSQLIcon.png'"

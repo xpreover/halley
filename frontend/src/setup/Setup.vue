@@ -11,7 +11,7 @@ const setupState = reactive({
 provide('setupState', setupState)
 
 const titleBySourceType = {
-	erpnext: 'Setup ERPNext',
+	erpnext: 'Setup ERP.GG',
 	mariadb: 'Setup MariaDB',
 	postgresql: 'Setup PostgreSQL',
 	file: 'Setup Spreadsheet',
@@ -19,7 +19,7 @@ const titleBySourceType = {
 }
 const descriptionBySourceType = {
 	erpnext:
-		'Insights is already connected to your ERPNext site. You can optionally give a title to your site to help you identify it as a data source.',
+		'BASES.GG is already connected to your ERP.GG site. You can optionally give a title to your site to help you identify it as a data source.',
 	mariadb:
 		'You need to enter your MariaDB database details to connect to your database. If you are not sure about your database details, please contact your database administrator.',
 	postgresql:
@@ -37,9 +37,9 @@ const connectStepDescription = computed(() => {
 
 const steps = ref([
 	{
-		title: 'Welcome to Insights',
+		title: 'Welcome to BASES.GG',
 		description: `
-			To get started, you need to connect some data. You can connect to ERPNext, a SQL database, a spreadsheet, or you can explore our sample datasets to get a feel for how Insights works.
+			To get started, you need to connect some data. You can connect to ERP.GG, a SQL database, a spreadsheet, or you can explore our sample datasets to get a feel for how Insights works.
 		`,
 		component: markRaw(SourceTypeStep),
 	},
