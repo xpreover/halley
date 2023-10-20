@@ -76,7 +76,7 @@
 						},
 						session.user.is_admin
 							? {
-									label: 'Switch to Desk',
+									label: 'Switch To ERP.GG',
 									icon: 'grid',
 									onClick: () => open('/app'),
 							  }
